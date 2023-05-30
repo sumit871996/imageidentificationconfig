@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application2
-  namespace: argocd
+  name: imageidentificationapp
+  namespace: argocd-image
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/sumit871996/argocdyaml.git
+    repoURL: https://github.com/sumit871996/imageidentificationconfig.git
     targetRevision: HEAD
     path: .
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: argocd-image
 
   syncPolicy:
     syncOptions:

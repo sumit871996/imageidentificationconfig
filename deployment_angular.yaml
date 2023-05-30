@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: angular
+  name: reactapp
 spec:
   selector:
     matchLabels:
-      app: angular
+      app: reactapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: angular
+        app: reactapp
     spec:
       containers:
-        - name: poc6angcon
-          image: sumithpe/poc6angargo:latest
+        - name: imageidentificationcon
+          image: sumithpe/imageidentifront:latest
           ports:
             - containerPort: 80
