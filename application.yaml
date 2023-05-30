@@ -10,7 +10,6 @@ spec:
     repoURL: https://github.com/sumit871996/imageidentificationconfig.git
     targetRevision: HEAD
     path: .
-    branch: master
 
   destination:
     server: https://kubernetes.default.svc
