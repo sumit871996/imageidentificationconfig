@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: sumithpe/imageidentifront:latest
+          image: sumithpe/imageidentifront:lates
           ports:
             - containerPort: 3000
