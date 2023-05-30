@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular
+spec:
+  selector:
+    matchLabels:
+      app: angular
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: angular
+    spec:
+      containers:
+        - name: poc6angcon
+          image: sumithpe/poc6angargo:latest
+          ports:
+            - containerPort: 80
