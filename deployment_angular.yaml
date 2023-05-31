@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reactapp1
+  name: reactapp
 spec:
   selector:
     matchLabels:
-      app: reactapp1
+      app: reactapp
   replicas: 2
   template:
     metadata:
       labels:
-        app: reactapp1
+        app: reactapp
     spec:
       containers:
         - name: imageidentificationcon
