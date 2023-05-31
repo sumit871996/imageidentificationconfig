@@ -17,4 +17,4 @@ spec:
           image: sumithpe/imageidentifrontapp:31
           ports:
             - containerPort: 3000
-      imagePullPolicy: Always
+      
