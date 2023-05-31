@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: imageidentificationapp
+  name: imageidentificationapp1
   namespace: argocd
 spec:
   project: default
@@ -13,7 +13,7 @@ spec:
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd-image
+    namespace: argocd-image1
 
   syncPolicy:
     syncOptions:
