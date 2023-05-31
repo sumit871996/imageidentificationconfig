@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: imageidentificationcon
-          image: sumithpe/imageidentifrontapp:3
+          image: sumithpe/imageidentifrontapp:31
           ports:
             - containerPort: 3000
+      imagePullPolicy: Always
       
