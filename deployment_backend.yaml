@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapiapp
+spec:
+  selector:
+    matchLabels:
+      app: fastapiapp
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: fastapiapp
+    spec:
+      containers:
+        - name: imageidentificationconbackend
+          image: sumithpe/imagebackidentification:1
+          ports:
+            - containerPort: 8000
