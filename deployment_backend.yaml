@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: imageidentificationconbackend
-          image: sumithpe/imagebackidentification:1
+          image: sumithpe/imagebackidentification:2
           ports:
             - containerPort: 8000
