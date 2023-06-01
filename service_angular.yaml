@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: reactservice
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: reactapp
   ports:
     - targetPort: 3000
       protocol: TCP
       port: 3000
+      nodePort: 32000
