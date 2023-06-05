@@ -12,7 +12,7 @@ spec:
     path: .
 
   destination:
-    server: https://sumit-cluster-dns-qpl6nr7k.hcp.centralindia.azmk8s.io
+    server: https://kubernetes.default.svc
     namespace: argocd-image
 
   syncPolicy:
