@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: reactservice
 spec:
-  type: NodePort
+  type: LoadBalancer
+  clusterIP: 10.0.77.133
   selector:
     app: reactapp
   ports:
