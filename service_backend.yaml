@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: fastapiservice
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: fastapiapp
+  clusterIP: 10.0.199.88
   ports:
     - targetPort: 8000
       protocol: TCP
-      port: 8000
+      port: 8000   
