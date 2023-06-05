@@ -6,7 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     app: reactapp
-  clusterIP: 10.0.34.180
+  
   ports:
     - targetPort: 3000
       protocol: TCP
