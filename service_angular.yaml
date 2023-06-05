@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: reactservice
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: reactapp
   
