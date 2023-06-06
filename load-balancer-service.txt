@@ -5,7 +5,7 @@ metadata:
     service.beta.kubernetes.io/azure-load-balancer-resource-group: myNetworkResourceGroup
   name: azure-load-balancer
 spec:
-  loadBalancerIP: 20.237.180.188
+  loadBalancerIP: 20.204.252.246
   type: LoadBalancer
   ports:
   - port: 80
