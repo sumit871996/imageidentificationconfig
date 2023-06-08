@@ -5,10 +5,11 @@ metadata:
   annotations:
     service.beta.kubernetes.io/azure-dns-label-name: mongo-db
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 27017
       targetPort: 27017
+
   selector:
     app: mongo
 ---
