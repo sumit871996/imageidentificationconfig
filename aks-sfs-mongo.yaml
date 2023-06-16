@@ -33,15 +33,8 @@ spec:
         - name: mongo
           image: mongo
           command:
-            - mongod
-            - "--bind_ip_all"
-            - "--replSet"
-            - rs0
-            - sh
-            - "-c"
-            - |
-              mongosh --eval "rs.initiate(); var cfg = rs.conf(); cfg.members[0].host='mongo-0.mongo:27017'; rs.reconfig(cfg); rs.add('mongo-1.mongo:27017'); rs.add('mongo-2.mongo:27017');"
-
+            - mongosh --eval "rs.initiate(); var cfg = rs.conf(); cfg.members[0].host='mongo-0.mongo:27017'; rs.reconfig(cfg); rs.add('mongo-1.mongo:27017'); rs.add('mongo-2.mongo:27017');"
+            
             
           ports:
             - containerPort: 27017
