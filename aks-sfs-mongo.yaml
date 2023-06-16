@@ -33,7 +33,10 @@ spec:
         - name: mongo
           image: mongo
           command:
-            - mongod --bind_ip_all --replSet" rs0
+            - sh
+            - -c
+            - |
+              mongod --bind_ip_all --replSet rs0
 
           
             
