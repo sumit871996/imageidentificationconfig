@@ -37,6 +37,7 @@ spec:
             - "--bind_ip_all"
             - "--replSet"
             - rs0
+            - exit
             - mongosh
             - rs.initiate()
             - var cfg = rs.conf()
